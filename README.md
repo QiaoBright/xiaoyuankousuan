@@ -7,9 +7,9 @@
 作者对使用造成的任何后果不负责任
 
 只能识别两个数的判断和部分100以内加减法的运算（绘画效果很好，但是小猿口算识别不出来...）
-源码来自GitHub，我属于二次优化
+源码来自GitHub作者ouyangyipeng，我属于二次优化
 ```
-pip install pyautogui pillow pytesseract
+https://github.com/ouyangyipeng/XiaoyuanKousuan
 ```
 
 
