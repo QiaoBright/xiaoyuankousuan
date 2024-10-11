@@ -7,6 +7,11 @@
 作者对使用造成的任何后果不负责任
 
 只能识别两个数的判断和部分100以内加减法的运算（绘画效果很好，但是小猿口算识别不出来...）
+源码来自GitHub，我属于二次优化
+```
+pip install pyautogui pillow pytesseract
+```
+
 
 
 ## 相关下载
@@ -55,7 +60,19 @@ python find_x_y.py
 
 根据指示移动至 题目识别区域 和 画大小号区域
 
-判断类型的题目都可以做
+### 投屏由于手机和电脑不是同一品牌，实现投屏，就没法运作了。要实现自家的多屏协调办公。
+例如：HUAWEI电脑，Xiaomi手机，教程如下
+```
+https://zhuanlan.zhihu.com/p/662860377
+```
+
+### 判断类型的题目都可以做，如图：
+<img src="https://github.com/user-attachments/assets/677d5309-3151-4a9e-80f9-d2ae5a4fbf61" width="200"/>
+
+### 加减法尝试过这个，如图：
+<img src="https://github.com/user-attachments/assets/64aeea97-b49a-4321-8203-5c8d7f845348" width="200"/>
+
+
 
 修改main.py的主函数
 ```python
