@@ -8,22 +8,6 @@
 
 只能识别两位数及以下的比大小
 
-# 使用方法：
-
-## 下载python
-```
-https://www.python.org/downloads/windows/
-```
-
-上述链接下载python，打开安装包，安装过程中记得勾选add to path选项
-
-若没有addtopath则手动添加至系统变量
-
-win+r输入powershell，输入
-```shell
-python --version
-```
-检查是否成功安装
 
 ## 相关下载
 保持在cmd输入
