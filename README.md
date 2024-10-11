@@ -55,13 +55,19 @@ python find_x_y.py
 
 根据指示移动至 题目识别区域 和 画大小号区域
 
+判断类型的题目都可以做
+
 修改main.py的主函数
 ```python
 def main():
-    x_start = 400  # 根据实际情况调整
-    y_start = 350  # 根据实际情况调整
-    width = 500    # 根据实际情况调整
-    height = 100   # 根据实际情况调整
+    answer = 'judge'        #如果尝试优化100内加减口算，把answer=='add_and_abstract'
+    if answer == 'judge':
+        x_start = 1550
+    else:
+        x_start = 1500
+    y_start = 375
+    width = 250
+    height = 100
 
     screenshot_path = "screenshot.png"
 
@@ -70,16 +76,19 @@ def main():
     math_question = recognize_math_question(screenshot_path)
     print(f"识别到的数学题：{math_question}")
 
-    result = compare_math_question(math_question)
-
+    result = compare_math_question(math_question,answer)
+    
     if result:
         print(f"判断结果：{result}")
-        draw_x = 450  # 根据实际情况调整
-        draw_y = 800  # 根据实际情况调整
-        draw_result(result, draw_x, draw_y)
+        draw_x = 1689
+        draw_y = 753
+        if answer == 'judge':
+            draw_result(result, draw_x, draw_y)
+        else:
+            draw_number(result,draw_x,draw_y)
+
     else:
         print("无法解析数学题")
-
 ```
 
 
